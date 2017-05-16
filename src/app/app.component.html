@@ -1,3 +1,9 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+  <h1>
+    {{title}}
+  </h1>
+  <add-form (taskadd)="updateTask($event)"></add-form>
+  <ul *ngFor="let t of tasks">
+    <li>{{t.name}} <span (click)="remove()">[x]</span></li>
+  </ul>
+</div>

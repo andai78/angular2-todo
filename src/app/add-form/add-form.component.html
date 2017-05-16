@@ -1,0 +1,4 @@
+<form (ngSubmit)="addTask($event, form.value)" #form="ngForm">
+  <input type="text" name="newTask" [(ngModel)]="newTask" placeholder="Type in new todo...">
+  <button type="submit">Add Todo</button>
+</form>
